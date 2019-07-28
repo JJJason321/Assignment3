@@ -1,0 +1,18 @@
+.pic{
+    grid-area: pic;
+}
+
+.info{
+    grid-area: info;
+}
+
+.navigation{
+    grid-area: nav;
+}
+
+.wrapper{
+    display: grid;
+    grid-template-areas: "nav nav"
+                         "pic info";
+    grid-template-columns: 25%;
+}

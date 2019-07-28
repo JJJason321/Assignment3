@@ -1,0 +1,30 @@
+<div class="wrapper">
+
+<div class="navigation">
+    <div *ngFor="let item of mysongs; let i = index">
+        <button type="button" (click)="post(i)">{{item.name}}</button>
+</div>
+    
+</div>
+
+<div class="pic">
+<li *ngFor="let item of mysongs; let i = index">
+    <img src="{{item.picture}}" width="200" height="200">
+</li>
+</div>
+
+<div class="info">
+<ul>
+    <li *ngFor="let item of mysongs; let i=index" >
+        {{item.name}}
+        
+        <div>
+            <strong>Artist:</strong>{{item.artist}}<br />
+            <strong>Genre:</strong>{{item.genre}}<br />
+            <strong>Year Released:</strong>{{item.yearReleased}}<br />
+        </div><br />
+    </li>
+</ul>
+</div>
+
+</div>
